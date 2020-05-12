@@ -1,0 +1,10 @@
+<!--pages/about/about.wxml-->
+<text class="title">主页</text>
+<button size="mini">按钮1</button>
+<view>hello {{name}}</view>
+<view>age: {{age}}</view>
+<!-- 列表循环 -->
+<view wx:for="{{students}}"  >{{item.id}}{{item.name}}</view>
+<!-- 点击事件改数据 -->
+<view>计数: {{counter}}</view>
+<button size="mini" bindtap="handleBtnClick">+</button>
